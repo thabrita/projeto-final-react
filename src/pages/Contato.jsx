@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { Header } from "../components/Header";
 import contactImg from '../assets/contact.svg';
+import {database} from '../services/firebase';
+import { ref, push, set } from 'firebase/database';
 import styles from '../styles/pages/contato.module.css';
+
 
 export function Contato() {
     const [nome, setNome] = useState('')
@@ -26,6 +29,19 @@ export function Contato() {
         console.log('nome: ', nome)
         console.log('email: ', email)
         console.log('mensagem: ', mensagem)
+
+        //dentro do firebase cria uma tabela de mensagens
+        const mensagensListRef = ref(database, 'mensagens')
+
+        //dentro de tabela de mensagens cria uma nova mensagem
+        const novaMensagemRef = push(mensagensListRef)
+
+        //dizer o que vai em cada mensagem
+        set(novaMensagemRef, {
+            nome: nome,
+            email: email,
+            mensagem: mensagem
+        })
 
         setNome('')
         setEmail('')
