@@ -7,13 +7,13 @@ import { Database } from "phosphor-react";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyATD8SS260xRzZOtIs9mbP97lkVNMiSD3s",
-  authDomain: "projeto-final-pretalab-190b2.firebaseapp.com",
-  projectId: "projeto-final-pretalab-190b2",
-  storageBucket: "projeto-final-pretalab-190b2.appspot.com",
-  messagingSenderId: "160474981145",
-  appId: "1:160474981145:web:6d8247436f2e812e3b9b88",
-  databaseURL: "https://projeto-final-pretalab-190b2-default-rtdb.firebaseio.com/"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  databaseURL: import.meta.env.VITE_DATABASE_URL
 };
 
 // Initialize Firebase
