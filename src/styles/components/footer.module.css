@@ -1,6 +1,6 @@
 .footerContainer {
     padding: 2rem;
-    background: #686aac;
+    background: #a4b9ce;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,4 +37,11 @@
     color: white;
     text-decoration: underline;
     margin: 5px;
+}
+
+@media(max-width: 765px) {
+    .listaFooter {
+        display: flex;
+        flex-direction: column;
+    }
 }

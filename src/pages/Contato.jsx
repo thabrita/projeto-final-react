@@ -3,6 +3,7 @@ import { Header } from "../components/Header";
 import contactImg from '../assets/contact.svg';
 import {database} from '../services/firebase';
 import { ref, push, set } from 'firebase/database';
+import { PaperPlaneTilt } from 'phosphor-react';
 import styles from '../styles/pages/contato.module.css';
 
 
@@ -56,7 +57,7 @@ export function Contato() {
                 <input onChange={handleInputName} placeholder="Digite seu nome" className={styles.formInput} value={nome}/>
                 <input onChange={handleInputEmail} placeholder="Digite seu email" className={styles.formInput} value={email}/>
                 <textarea onChange={handleInputMensagem} placeholder="Digite sua mensagem" className={styles.formTextArea} value={mensagem}/>
-                <button className={styles.formButton} type="submit">Enviar mensagem</button>
+                <button className={styles.formButton} type="submit">Enviar mensagem <PaperPlaneTilt size={16} /></button>
             </form>
         </div>
         </>

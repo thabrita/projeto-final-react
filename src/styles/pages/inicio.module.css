@@ -25,6 +25,20 @@
 
 @media(max-width: 765px) {
     .homeContainer {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .cardText {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cardTitle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }

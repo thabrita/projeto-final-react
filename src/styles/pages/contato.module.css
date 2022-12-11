@@ -34,7 +34,7 @@ form {
 }
 
 .formButton {
-    background-color: #4caf50;
+    background-color: #a4b9ce;
     border: none;
     color: white;
     padding: 12px 32px;
@@ -49,5 +49,5 @@ form {
 }
 
 .formButton:hover {
-    background-color: #4ca;
+    background-color: #3f6a83;
 }
