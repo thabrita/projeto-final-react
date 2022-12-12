@@ -47,7 +47,7 @@ export function Portfolio() {
 
     return (
         <>
-        <Header text="Meu portifólio" image={portfolioImg}/>
+        <Header text="Meu portfólio" image={portfolioImg}/>
         <div className={styles.projetosContainer}>
             <h1 className={styles.projetosTitle}>Projetos</h1>
             <div className={styles.cardContainer}>
