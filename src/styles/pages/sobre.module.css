@@ -37,9 +37,4 @@
         display: flex;
         flex-direction: column;
     }
-
-    .principalContainer {
-        display: flex;
-        flex-direction: column;
-    }
 }
