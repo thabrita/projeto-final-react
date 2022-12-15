@@ -84,6 +84,10 @@
     color: white;
 }
 
+.cardRepo:hover {
+    background-color: #8ba6c2;
+}
+
 @media(max-width: 765px) {
     .cardContainer {
         display: flex;

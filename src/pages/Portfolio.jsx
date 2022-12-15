@@ -57,7 +57,7 @@ export function Portfolio() {
                             <h2>{repo.nome}</h2>
                             <img className={styles.cardImg} src={repo.imagem}/>
                             <p className={styles.cardTexto}>{repo.descricao}</p>
-                            <a className={styles.cardLink} href={repo.link} target='_blank'>Veja aqui <ArrowSquareOut size={16} /></a>
+                            <a className={styles.cardLink} href={repo.link} target='_blank' rel="noreferrer">Veja aqui <ArrowSquareOut size={16} /></a>
                         </div>
                     )
                 })}
@@ -72,7 +72,7 @@ export function Portfolio() {
                         <div className={styles.cardRepo}>
                             <h3 className={styles.repoTitle} key={repo.id}>{repo.name}</h3>
                             <p className={styles.repoTexto}>{repo.description}</p>
-                            <a className={styles.repoLink} href={repo.html_url} target='_blank'><ArrowURightUp size={35} weight='regular' color="#fff"/></a>
+                            <a className={styles.repoLink} href={repo.html_url} target='_blank' rel="noreferrer"><ArrowURightUp size={35} weight='regular' color="#fff"/></a>
                         </div>
                     )}
                 </div>

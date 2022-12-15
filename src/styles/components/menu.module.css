@@ -17,6 +17,10 @@
     color: #3f6a83;
 }
 
+.menuLink:hover {
+    text-decoration: overline;
+}
+
 @media(max-width: 765px) {
     .menuContainer {
         flex-direction: column;
